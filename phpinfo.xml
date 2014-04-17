@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+ 
+	<name>COM_PHPINFO</name>
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>April 2014</creationDate>
+	<author>Charles-Antoine DEGENNES</author>
+	<authorEmail>cadegenn@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>AGPL v3</license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.0.01</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>COM_PHPINFO_DESCRIPTION</description>
+	
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link="option=com_phpinfo" img="components/com_phpinfo/images/favicon.ico">COM_PHPINFO</menu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>phpinfo.php</filename>
+			<filename>controller.php</filename>
+			<folder>css</folder>
+			<folder>images</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_phpinfo.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_phpinfo.sys.ini</language>
+		</languages>
+	</administration>
+ 
+</extension>
