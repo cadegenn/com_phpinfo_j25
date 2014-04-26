@@ -10,7 +10,7 @@
 	<copyright>Copyright Info</copyright>
 	<license>AGPL v3</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.0.01</version>
+	<version>0.0.02</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_PHPINFO_DESCRIPTION</description>
 	
@@ -28,6 +28,7 @@
 			<filename>controller.php</filename>
 			<folder>css</folder>
 			<folder>images</folder>
+			<folder>models</folder>
 			<folder>views</folder>
 		</files>
 		<languages folder="admin">

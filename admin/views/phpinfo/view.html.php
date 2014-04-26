@@ -8,7 +8,7 @@ jimport('joomla.application.component.view');
 /**
  * phpinfo View
  */
-class phpinfoViewphpinfo extends JView
+class phpinfoViewPhpinfo extends JView
 {
 	public $option;
 	
@@ -25,6 +25,9 @@ class phpinfoViewphpinfo extends JView
 	{
         $doc = JFactory::getDocument();
         $doc->addStyleSheet('components/'.$this->option.'/css/phpinfo.css');
+
+		$this->component = $this->get('Component');
+		$this->manifest = json_decode($this->component->manifest_cache);
 
 		// Set the toolbar
 		$this->addToolBar();

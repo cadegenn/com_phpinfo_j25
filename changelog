@@ -1,2 +1,5 @@
-@version 0.0.01 - @date
+@version 0.0.02 - @date 2014.04.26
+	. display component's version into footer
+
+@version 0.0.01 - @date 2014.04.17
 	. initial version
